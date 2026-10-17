@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Client Questionnaires | Love by the Studio</title>
+<meta name="description" content="Tell us about your wedding. Complete the Wedding Identity or Custom Stationery questionnaire and the Love by the Studio team will be in touch.">
+<link rel="canonical" href="https://lovebythestudio.com/questionnaire.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Love by the Studio">
+<meta property="og:url" content="https://lovebythestudio.com/questionnaire.html">
+<meta property="og:title" content="Client Questionnaires | Love by the Studio">
+<meta property="og:description" content="Tell us about your wedding so we can begin designing your wedding identity or custom stationery.">
+<meta property="og:image" content="https://lovebythestudio.com/images/share-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="images/logo-oval-red.png">
+<link rel="apple-touch-icon" href="images/logo-oval-red.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Gilda+Display&amp;family=Pinyon+Script&amp;family=Hanken+Grotesk:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<header class="site-header">
+<nav aria-label="Main">
+<a class="brand" href="index.html"><img src="images/logo-oval-cream.png" alt=""><span>LOVE BY THE STUDIO</span></a>
+<div class="nav-links">
+<a href="index.html#offer">What we offer</a>
+<a href="pricing.html">Pricing</a>
+<a href="index.html#shop">Shop</a>
+<a href="contact.html">Contact</a>
+<a href="questionnaire.html" class="pill" aria-current="page">Questionnaires</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="page-hero">
+<div class="wrap">
+<p class="eyebrow">Let’s begin</p>
+<h1>Tell us your love story.</h1>
+<p class="lead">These questions help us understand you, your celebration and the feeling you want your guests to carry home. Choose the questionnaire that fits what you need. It takes about 10 minutes, and there are no wrong answers.</p>
+</div>
+</section>
+
+<section class="section" style="padding-bottom:120px">
+<div class="wrap narrow">
+<h2 class="section-title">Choose your questionnaire</h2>
+<p class="section-intro">Not sure which one? If you would like us to design your whole wedding look, choose Wedding Identity. If you already know you need invitations or other printed pieces, choose Custom Stationery.</p>
+
+<div class="choices" role="group" aria-label="Questionnaire type">
+<button type="button" class="choice" data-target="identity" aria-pressed="false" aria-controls="identity">
+<span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5F5F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+<span class="num">i.</span>
+<span class="t">Wedding Identity</span>
+<span class="d">For couples who want a cohesive wedding brand: monogram, colour palette, typography and the visual story that ties every detail together.</span>
+<span class="meta">About 10 minutes</span>
+</button>
+<button type="button" class="choice" data-target="stationery" aria-pressed="false" aria-controls="stationery">
+<span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5F5F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+<span class="num">ii.</span>
+<span class="t">Custom Stationery</span>
+<span class="d">For couples who need save the dates, invitations, menus, signage or other printed and digital pieces designed for their day.</span>
+<span class="meta">About 8 minutes</span>
+</button>
+</div>
+<p class="hint-pick" id="pick-hint">Select a questionnaire above to begin.</p>
+
+<!-- =========================================================
+     FORM 1: WEDDING IDENTITY
+     Submissions arrive in Netlify (Forms) and are emailed to you.
+     ========================================================= -->
+<form id="identity" class="q-form" name="wedding-identity-questionnaire" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+<input type="hidden" name="form-name" value="wedding-identity-questionnaire">
+<input type="hidden" name="subject" value="New Wedding Identity questionnaire">
+<p class="hidden-field"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+<div class="form-head">
+<h2>Wedding Identity</h2>
+<p>Fields marked <span class="req">*</span> are required. Everything else is optional, so share as much or as little as you like.</p>
+</div>
+
+<fieldset>
+<legend><span class="n">i.</span>About you</legend>
+<div class="grid">
+<div class="field"><label for="wi-name1">Your full name <span class="req">*</span></label><input id="wi-name1" name="Your name" type="text" autocomplete="name" required></div>
+<div class="field"><label for="wi-name2">Your partner’s full name <span class="req">*</span></label><input id="wi-name2" name="Partner's name" type="text" required></div>
+<div class="field"><label for="wi-email">Email address <span class="req">*</span></label><input id="wi-email" name="email" type="email" autocomplete="email" required></div>
+<div class="field"><label for="wi-phone">Phone or WhatsApp number <span class="req">*</span></label><input id="wi-phone" name="Phone / WhatsApp" type="tel" autocomplete="tel" required></div>
+<div class="field"><label for="wi-ig">Instagram handle</label><input id="wi-ig" name="Instagram" type="text" placeholder="@"></div>
+<div class="field"><label for="wi-contact">Best way to reach you</label>
+<select id="wi-contact" name="Preferred contact"><option value="">Choose one</option><option>WhatsApp</option><option>Email</option><option>Phone call</option><option>Instagram</option></select></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend><span class="n">ii.</span>Your celebration</legend>
+<div class="grid">
+<div class="field"><label for="wi-date">Wedding date <span class="req">*</span></label><input id="wi-date" name="Wedding date" type="date" required><span class="help">Not set yet? Pick an approximate date and tell us below.</span></div>
+<div class="field"><label for="wi-city">City and venue</label><input id="wi-city" name="City and venue" type="text" placeholder="e.g. Abuja, venue to be confirmed"></div>
+<div class="field"><label for="wi-guests">Estimated number of guests</label><input id="wi-guests" name="Guest count" type="number" min="0" inputmode="numeric"></div>
+<div class="field"><label for="wi-planner">Wedding planner (if you have one)</label><input id="wi-planner" name="Planner" type="text"></div>
+<div class="field full"><span class="label" id="wi-events-l">Which events are you planning?</span>
+<div class="options" role="group" aria-labelledby="wi-events-l">
+<label class="opt"><input type="checkbox" name="Events[]" value="Traditional engagement / introduction">Traditional engagement or introduction</label>
+<label class="opt"><input type="checkbox" name="Events[]" value="White wedding / ceremony">White wedding or ceremony</label>
+<label class="opt"><input type="checkbox" name="Events[]" value="Reception">Reception</label>
+<label class="opt"><input type="checkbox" name="Events[]" value="Bridal shower">Bridal shower</label>
+<label class="opt"><input type="checkbox" name="Events[]" value="After-party">After-party</label>
+<label class="opt"><input type="checkbox" name="Events[]" value="Court / registry">Court or registry</label>
+</div></div>
+<div class="field full"><label for="wi-dates-note">Anything to know about your dates or events?</label><textarea id="wi-dates-note" name="Notes on dates and events" rows="3"></textarea></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend><span class="n">iii.</span>Your story</legend>
+<p class="fs-note">This is where your wedding identity comes from. Small details often become the most meaningful design elements.</p>
+<div class="grid">
+<div class="field full"><label for="wi-story">How did you meet, and what is your story together? <span class="req">*</span></label><textarea id="wi-story" name="Our story" rows="5" required></textarea></div>
+<div class="field"><label for="wi-words">Three words that describe you as a couple</label><input id="wi-words" name="Three words" type="text"></div>
+<div class="field"><label for="wi-feel">How do you want guests to feel?</label><input id="wi-feel" name="How guests should feel" type="text" placeholder="e.g. welcomed, celebrated, in awe"></div>
+<div class="field full"><label for="wi-meaning">Places, songs, symbols, cultures or traditions that matter to you</label><textarea id="wi-meaning" name="Meaningful details" rows="3"></textarea></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend><span class="n">iv.</span>Your style</legend>
+<div class="grid">
+<div class="field full"><span class="label" id="wi-style-l">Which styles feel most like you?</span>
+<div class="options" role="group" aria-labelledby="wi-style-l">
+<label class="opt"><input type="checkbox" name="Style[]" value="Classic and timeless">Classic and timeless</label>
+<label class="opt"><input type="checkbox" name="Style[]" value="Romantic and soft">Romantic and soft</label>
+<label class="opt"><input type="checkbox" name="Style[]" value="Modern and minimal">Modern and minimal</label>
+<label class="opt"><input type="checkbox" name="Style[]" value="Editorial and fashion-led">Editorial and fashion-led</label>
+<label class="opt"><input type="checkbox" name="Style[]" value="Bold and glamorous">Bold and glamorous</label>
+<label class="opt"><input type="checkbox" name="Style[]" value="Cultural and traditional">Cultural and traditional</label>
+<label class="opt"><input type="checkbox" name="Style[]" value="Garden and natural">Garden and natural</label>
+<label class="opt"><input type="checkbox" name="Style[]" value="Not sure yet">Not sure yet</label>
+</div></div>
+<div class="field"><label for="wi-colours">Colours you love</label><input id="wi-colours" name="Colours we love" type="text"></div>
+<div class="field"><label for="wi-avoid">Colours to avoid</label><input id="wi-avoid" name="Colours to avoid" type="text"></div>
+<div class="field"><label for="wi-mono">What should your monogram include?</label>
+<select id="wi-mono" name="Monogram"><option value="">Choose one</option><option>Our initials</option><option>Our first names</option><option>Our surname</option><option>A wedding hashtag</option><option>We’d love your suggestion</option></select></div>
+<div class="field"><label for="wi-hashtag">Wedding hashtag (if you have one)</label><input id="wi-hashtag" name="Hashtag" type="text" placeholder="#"></div>
+<div class="field"><label for="wi-pin">Pinterest board or inspiration link</label><input id="wi-pin" name="Inspiration link" type="url" placeholder="https://"></div>
+<div class="field"><label for="wi-file">Upload an inspiration image</label><input id="wi-file" name="Inspiration image" type="file" accept="image/*,.pdf"><span class="help">One file, up to 8 MB. You can send more later.</span></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend><span class="n">v.</span>What you need</legend>
+<div class="grid">
+<div class="field full"><span class="label" id="wi-need-l">Which pieces would you like us to design? <span class="req">*</span></span>
+<div class="options" role="group" aria-labelledby="wi-need-l">
+<label class="opt"><input type="checkbox" name="Needs[]" value="Monogram / wedding logo">Monogram or wedding logo</label>
+<label class="opt"><input type="checkbox" name="Needs[]" value="Colour palette and typography">Colour palette and typography</label>
+<label class="opt"><input type="checkbox" name="Needs[]" value="Wedding website">Wedding website</label>
+<label class="opt"><input type="checkbox" name="Needs[]" value="Invitations and stationery">Invitations and stationery</label>
+<label class="opt"><input type="checkbox" name="Needs[]" value="Signage">Signage</label>
+<label class="opt"><input type="checkbox" name="Needs[]" value="Social media graphics">Social media graphics</label>
+<label class="opt"><input type="checkbox" name="Needs[]" value="Bridal party merch">Bridal party merch</label>
+<label class="opt"><input type="checkbox" name="Needs[]" value="Games and favours">Games and favours</label>
+<label class="opt"><input type="checkbox" name="Needs[]" value="Décor and details">Décor and details</label>
+</div></div>
+<div class="field"><label for="wi-budget">Budget for your wedding identity</label>
+<select id="wi-budget" name="Budget"><option value="">Choose one</option><option>Under ₦250,000</option><option>₦250,000 – ₦500,000</option><option>₦500,000 – ₦1,000,000</option><option>₦1,000,000 – ₦2,000,000</option><option>Above ₦2,000,000</option><option>Not sure yet</option></select></div>
+<div class="field"><label for="wi-when">When would you like to see first designs?</label><input id="wi-when" name="First designs by" type="date"></div>
+<div class="field"><label for="wi-heard">How did you hear about us?</label>
+<select id="wi-heard" name="Heard about us"><option value="">Choose one</option><option>Instagram</option><option>A friend or family member</option><option>A wedding planner or vendor</option><option>Etsy</option><option>Pop-up or event</option><option>Google</option><option>Other</option></select></div>
+<div class="field full"><label for="wi-else">Anything else you’d like us to know?</label><textarea id="wi-else" name="Anything else" rows="4"></textarea></div>
+</div>
+</fieldset>
+
+<label class="consent"><input type="checkbox" name="Consent" value="Yes" required><span>I’m happy for Love by the Studio to contact me about my wedding using the details above. <span class="req">*</span></span></label>
+<div class="submit-row">
+<button type="submit" class="btn">Send my questionnaire</button>
+<p>We’ll be in touch soon to talk through your answers.</p>
+</div>
+</form>
+
+<!-- =========================================================
+     FORM 2: CUSTOM STATIONERY
+     ========================================================= -->
+<form id="stationery" class="q-form" name="custom-stationery-questionnaire" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+<input type="hidden" name="form-name" value="custom-stationery-questionnaire">
+<input type="hidden" name="subject" value="New Custom Stationery questionnaire">
+<p class="hidden-field"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+<div class="form-head">
+<h2>Custom Stationery</h2>
+<p>Fields marked <span class="req">*</span> are required. Tell us what you need and we’ll come back with ideas and a quote.</p>
+</div>
+
+<fieldset>
+<legend><span class="n">i.</span>About you</legend>
+<div class="grid">
+<div class="field"><label for="cs-name1">Your full name <span class="req">*</span></label><input id="cs-name1" name="Your name" type="text" autocomplete="name" required></div>
+<div class="field"><label for="cs-name2">Your partner’s full name</label><input id="cs-name2" name="Partner's name" type="text"></div>
+<div class="field"><label for="cs-email">Email address <span class="req">*</span></label><input id="cs-email" name="email" type="email" autocomplete="email" required></div>
+<div class="field"><label for="cs-phone">Phone or WhatsApp number <span class="req">*</span></label><input id="cs-phone" name="Phone / WhatsApp" type="tel" autocomplete="tel" required></div>
+<div class="field full"><label for="cs-names">Names exactly as they should appear on your stationery <span class="req">*</span></label><input id="cs-names" name="Names as printed" type="text" required placeholder="e.g. Adaeze &amp; Tobi"></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend><span class="n">ii.</span>Your celebration</legend>
+<div class="grid">
+<div class="field"><label for="cs-date">Wedding or event date <span class="req">*</span></label><input id="cs-date" name="Event date" type="date" required></div>
+<div class="field"><label for="cs-city">City and venue</label><input id="cs-city" name="City and venue" type="text"></div>
+<div class="field full"><span class="label" id="cs-events-l">Which events is the stationery for?</span>
+<div class="options" role="group" aria-labelledby="cs-events-l">
+<label class="opt"><input type="checkbox" name="Events[]" value="Traditional engagement / introduction">Traditional engagement or introduction</label>
+<label class="opt"><input type="checkbox" name="Events[]" value="White wedding / ceremony">White wedding or ceremony</label>
+<label class="opt"><input type="checkbox" name="Events[]" value="Reception">Reception</label>
+<label class="opt"><input type="checkbox" name="Events[]" value="Bridal shower">Bridal shower</label>
+<label class="opt"><input type="checkbox" name="Events[]" value="Other celebration">Another celebration</label>
+</div></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend><span class="n">iii.</span>The pieces you need</legend>
+<div class="grid">
+<div class="field full"><span class="label" id="cs-items-l">Which pieces would you like? <span class="req">*</span></span>
+<div class="options" role="group" aria-labelledby="cs-items-l">
+<label class="opt"><input type="checkbox" name="Items[]" value="Save the dates">Save the dates</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Invitations">Invitations</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="RSVP cards">RSVP cards</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Details / information cards">Details or information cards</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Envelopes">Envelopes</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Order of service / programmes">Order of service or programmes</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Menus">Menus</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Place cards">Place cards</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Table numbers">Table numbers</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Welcome sign">Welcome sign</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Seating chart">Seating chart</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Thank-you cards">Thank-you cards</label>
+<label class="opt"><input type="checkbox" name="Items[]" value="Bridesmaid proposal cards">Bridesmaid proposal cards</label>
+</div></div>
+<div class="field"><span class="label" id="cs-format-l">Printed or digital? <span class="req">*</span></span>
+<div class="options" role="radiogroup" aria-labelledby="cs-format-l" style="grid-template-columns:1fr">
+<label class="opt"><input type="radio" name="Format" value="Printed" required>Printed</label>
+<label class="opt"><input type="radio" name="Format" value="Digital (to share online)">Digital, to share online</label>
+<label class="opt"><input type="radio" name="Format" value="Both">Both</label>
+</div></div>
+<div class="field"><label for="cs-qty">How many invitations do you need?</label><input id="cs-qty" name="Invitation quantity" type="number" min="0" inputmode="numeric"><span class="help">An estimate is fine.</span></div>
+<div class="field full"><span class="label" id="cs-finish-l">Finishing touches you’re interested in</span>
+<div class="options" role="group" aria-labelledby="cs-finish-l">
+<label class="opt"><input type="checkbox" name="Finishes[]" value="Wax seals">Wax seals</label>
+<label class="opt"><input type="checkbox" name="Finishes[]" value="Ribbon or lace">Ribbon or lace</label>
+<label class="opt"><input type="checkbox" name="Finishes[]" value="Vellum wraps">Vellum wraps</label>
+<label class="opt"><input type="checkbox" name="Finishes[]" value="Foil">Foil</label>
+<label class="opt"><input type="checkbox" name="Finishes[]" value="Textured or handmade paper">Textured or handmade paper</label>
+<label class="opt"><input type="checkbox" name="Finishes[]" value="Envelope liners">Envelope liners</label>
+<label class="opt"><input type="checkbox" name="Finishes[]" value="Keep it simple">Keep it simple</label>
+</div></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend><span class="n">iv.</span>Design and wording</legend>
+<div class="grid">
+<div class="field"><label for="cs-identity">Do you already have a wedding identity?</label>
+<select id="cs-identity" name="Existing identity"><option value="">Choose one</option><option>Yes, designed by Love by the Studio</option><option>Yes, from another designer</option><option>No, please design one for the stationery</option></select></div>
+<div class="field"><label for="cs-wording">Is your wording ready?</label>
+<select id="cs-wording" name="Wording"><option value="">Choose one</option><option>Yes, I’ll send it</option><option>Partly</option><option>No, please help me write it</option></select></div>
+<div class="field"><label for="cs-colours">Colours you’d like to use</label><input id="cs-colours" name="Colours" type="text"></div>
+<div class="field"><label for="cs-style">Describe the style you want</label><input id="cs-style" name="Style" type="text" placeholder="e.g. classic, romantic, minimal"></div>
+<div class="field"><label for="cs-pin">Pinterest board or inspiration link</label><input id="cs-pin" name="Inspiration link" type="url" placeholder="https://"></div>
+<div class="field"><label for="cs-file">Upload your wording, logo or an inspiration image</label><input id="cs-file" name="Attachment" type="file" accept="image/*,.pdf,.doc,.docx"><span class="help">One file, up to 8 MB.</span></div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend><span class="n">v.</span>Timing and delivery</legend>
+<div class="grid">
+<div class="field"><label for="cs-need">When do you need the stationery by? <span class="req">*</span></label><input id="cs-need" name="Needed by" type="date" required><span class="help">For printed invitations, we recommend allowing at least 6–8 weeks.</span></div>
+<div class="field"><label for="cs-deliver">Delivery city or pickup</label><input id="cs-deliver" name="Delivery" type="text" placeholder="e.g. delivery in Abuja, or pickup"></div>
+<div class="field"><label for="cs-budget">Budget for your stationery</label>
+<select id="cs-budget" name="Budget"><option value="">Choose one</option><option>Under ₦150,000</option><option>₦150,000 – ₦300,000</option><option>₦300,000 – ₦600,000</option><option>₦600,000 – ₦1,000,000</option><option>Above ₦1,000,000</option><option>Not sure yet</option></select></div>
+<div class="field"><label for="cs-heard">How did you hear about us?</label>
+<select id="cs-heard" name="Heard about us"><option value="">Choose one</option><option>Instagram</option><option>A friend or family member</option><option>A wedding planner or vendor</option><option>Etsy</option><option>Pop-up or event</option><option>Google</option><option>Other</option></select></div>
+<div class="field full"><label for="cs-else">Anything else you’d like us to know?</label><textarea id="cs-else" name="Anything else" rows="4"></textarea></div>
+</div>
+</fieldset>
+
+<label class="consent"><input type="checkbox" name="Consent" value="Yes" required><span>I’m happy for Love by the Studio to contact me about my order using the details above. <span class="req">*</span></span></label>
+<div class="submit-row">
+<button type="submit" class="btn">Send my questionnaire</button>
+<p>We’ll be in touch soon with ideas and a quote.</p>
+</div>
+</form>
+
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="wrap">
+<div class="foot-brand"><img src="images/logo-oval-cream.png" alt=""><div><span class="n">LOVE BY THE STUDIO</span><span class="s">A studio for love stories</span></div></div>
+<div class="foot-links"><a href="index.html">Home</a><a href="pricing.html">Pricing</a><a href="questionnaire.html">Questionnaires</a><a href="contact.html">Contact</a><a href="https://www.etsy.com/shop/Lovebythestudio" target="_blank" rel="noopener">Etsy shop</a><a href="https://instagram.com/lovebythestudio" target="_blank" rel="noopener">Instagram</a></div>
+<span class="copy">© 2026 Love by the Studio</span>
+</div>
+</footer>
+
+<script>
+(function(){
+  var forms = {identity: document.getElementById('identity'), stationery: document.getElementById('stationery')};
+  var buttons = document.querySelectorAll('.choice');
+  var hint = document.getElementById('pick-hint');
+  function show(key, scroll){
+    Object.keys(forms).forEach(function(k){ forms[k].hidden = (k !== key); });
+    buttons.forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.target === key ? 'true' : 'false'); });
+    hint.hidden = !!key;
+    if (key && history.replaceState) history.replaceState(null, '', '#' + key);
+    if (key && scroll) forms[key].scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  buttons.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.target, true); }); });
+  var start = (location.hash || '').replace('#','');
+  show(forms[start] ? start : null, false);
+})();
+</script>
+</body>
+</html>
